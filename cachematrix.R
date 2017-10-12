@@ -1,7 +1,5 @@
 ## Returns a matrix that is the inverse of 'x'
 
-## Write a short comment describing this function
-
 makeCacheMatrix <- function(x = matrix()) {
        s <- NULL
        set <- function(y) {
@@ -15,7 +13,7 @@ makeCacheMatrix <- function(x = matrix()) {
                        setsolve = setsolve,
                        getsolve = getsolve)
    }
-
+## caches the data
 > cacheSolve <- function(x, ...) {
        s <- x$getsolve()
      if(!is.null(s)) {
